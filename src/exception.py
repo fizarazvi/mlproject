@@ -1,9 +1,10 @@
-import sys
+import sys # functions and variables to manipulate different parts of the Python runtime environment
 from logger import logging
 
 def error_message_detail(error, error_detail: sys):
     #all information about at what line etc the exception occured
-    _,_,exc_tb = error_detail.exc_info()
+    #exc_info() returns a tuple of three values: type, value, and traceback
+    _,_,exc_tb = error_detail.exc_info() 
     file_name = exc_tb.tb_frame.f_code.co_filename
     error_message="Error occured in python script name [{0}] line number [{1}] error message [{2}]".format(
         file_name, exc_tb.tb_lineno, str(error)

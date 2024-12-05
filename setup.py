@@ -1,4 +1,4 @@
-from setuptools import find_packages, setup
+from setuptools import find_packages, setup # find packages will find all the packages in the directory and setup will help in setting up the package
 from typing import List
 
 HYPEN_E_DOT='-e .'
