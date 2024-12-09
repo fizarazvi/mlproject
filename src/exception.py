@@ -1,5 +1,5 @@
 import sys # functions and variables to manipulate different parts of the Python runtime environment
-from logger import logging
+from src.logger import logging
 
 def error_message_detail(error, error_detail: sys):
     #all information about at what line etc the exception occured
